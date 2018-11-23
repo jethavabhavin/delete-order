@@ -1,15 +1,11 @@
-# magento-delete-order
-
 # Overview
 ## Purpose of module
-
-Magento 2 Moduel for Delete unwanted Order 
 
 Inficode\DeleteOrder module is responsible for delete orders and order related invoice and shippings in system,
 Inficode\DeleteOrder module manages next system entities and flows:
 * order deletion;
 
-#Furure enhancement 
+##Furure enhancement 
 * invoice deletion;
 * shipment deletion (including tracks management);
 * credit memos deletion;
