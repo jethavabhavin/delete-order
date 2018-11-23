@@ -10,8 +10,12 @@
         <massaction name="listing_massaction">
             <action name="delete">
                 <settings>
+                    <confirm>
+                        <message translate="true">Delete selected orders?</message>
+                        <title translate="true">Delete Orders</title>
+                    </confirm>
                     <url path="sales/order/massDelete"/>
-                    <type>cancel</type>
+                    <type>delete</type>
                     <label translate="true">Delete</label>
                 </settings>
             </action>

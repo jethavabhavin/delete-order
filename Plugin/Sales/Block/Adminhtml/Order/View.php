@@ -36,10 +36,10 @@ class View {
 				[
 					'label' => __('Delete'),
 					'class' => 'delete',
+					'on_click' => 'deleteConfirm(\''
+					. __('Are you sure you want to delete this order ?')
+					. '\', \'' . $url . '\')',
 					'id' => 'order-view-delete-button',
-					'data_attribute' => [
-						'url' => $url,
-					],
 				]
 			);
 		}

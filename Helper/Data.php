@@ -85,7 +85,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper {
 	 * @return bool
 	 */
 	public function isAllowedAction() {
-		return $this->_authorization->isAllowed(Self::AUTH_PERMISSION);
+		return $this->_authorization->isAllowed(Self::ADMIN_RESOURCE);
 	}
 
 	/**

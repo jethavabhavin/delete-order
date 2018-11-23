@@ -3,14 +3,13 @@
 
 Inficode\DeleteOrder module is responsible for delete orders and order related invoice and shippings in system,
 Inficode\DeleteOrder module manages next system entities and flows:
-* order deletion;
+
+* order deletion
+* invoice deletion
+* shipment deletion (including tracks management)
+* credit memos deletion
 
 Inficode\DeleteOrder module is required for Magento\Sales module to perform order delete operations.
-
-## Furure enhancement 
-* invoice deletion;
-* shipment deletion (including tracks management);
-* credit memos deletion
 
 # Deployment
 ## System requirements
