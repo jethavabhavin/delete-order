@@ -5,7 +5,7 @@ Inficode\DeleteOrder module is responsible for delete orders and order related i
 Inficode\DeleteOrder module manages next system entities and flows:
 * order deletion;
 
-##Furure enhancement 
+## Furure enhancement 
 * invoice deletion;
 * shipment deletion (including tracks management);
 * credit memos deletion;
