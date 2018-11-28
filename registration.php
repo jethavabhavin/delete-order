@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © Inficode, Inc. All rights reserved.
+ * Copyright © Bhavin, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
 \Magento\Framework\Component\ComponentRegistrar::register(
 	\Magento\Framework\Component\ComponentRegistrar::MODULE,
-	'Inficode_DeleteOrder',
+	'Bhavin_DeleteOrder',
 	__DIR__
 );

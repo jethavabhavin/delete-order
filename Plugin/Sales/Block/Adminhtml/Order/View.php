@@ -1,16 +1,16 @@
 <?php
 /**
- * Copyright © Inficode, Inc. All rights reserved.
+ * Copyright © Bhavin, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Inficode\DeleteOrder\Plugin\Sales\Block\Adminhtml\Order;
+namespace Bhavin\DeleteOrder\Plugin\Sales\Block\Adminhtml\Order;
 
-use Inficode\DeleteOrder\Helper\Data as Helper;
+use Bhavin\DeleteOrder\Helper\Data as Helper;
 use Magento\Sales\Block\Adminhtml\Order\View as OrderView;
 
 class View {
 	/**
-	 * @var \Inficode\DeleteOrder\Helper\Data
+	 * @var \Bhavin\DeleteOrder\Helper\Data
 	 */
 	protected $helper;
 
@@ -32,7 +32,7 @@ class View {
 		if ($this->helper->canDelete($order)) {
 			$url = $this->helper->getDeleteUrl($order);
 			$view->addButton(
-				'inficode_delete_order',
+				'bhavin_delete_order',
 				[
 					'label' => __('Delete'),
 					'class' => 'delete',

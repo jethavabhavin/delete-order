@@ -7,14 +7,14 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="inficode" translate="label" sortOrder="400">
-            <label>Inficode</label>
+        <tab id="bhavin" translate="label" sortOrder="400">
+            <label>Bhavin</label>
         </tab>
-        <section id="inficode_delete_order" translate="label" type="text" sortOrder="310" showInDefault="1" showInWebsite="1" showInStore="1">
+        <section id="bhavin_delete_order" translate="label" type="text" sortOrder="310" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
             <label>Delete Order</label>
-            <tab>inficode</tab>
-            <resource>Inficode_DeleteOrder::delete_order</resource>
+            <tab>bhavin</tab>
+            <resource>Bhavin_DeleteOrder::delete_order</resource>
             <group id="general" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General</label>
                 <field id="enable" translate="label comment" type="select" showInDefault="1" showInWebsite="1" showInStore="1">

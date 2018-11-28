@@ -1,15 +1,15 @@
 <?php
 /**
- * Copyright © Inficode, Inc. All rights reserved.
+ * Copyright © Bhavin, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Inficode\DeleteOrder\Controller\Adminhtml\Order;
+namespace Bhavin\DeleteOrder\Controller\Adminhtml\Order;
 
-use Inficode\DeleteOrder\Helper\Data as Helper;
+use Bhavin\DeleteOrder\Helper\Data as Helper;
 
 class Delete extends \Magento\Sales\Controller\Adminhtml\Order {
 	/**
-	 * @var \Inficode\DeleteOrder\Helper\Data
+	 * @var \Bhavin\DeleteOrder\Helper\Data
 	 */
 	protected $helper;
 	/**

@@ -1,9 +1,9 @@
 <?php
 /**
- * Copyright © Inficode, Inc. All rights reserved.
+ * Copyright © Bhavin, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Inficode\DeleteOrder\Helper;
+namespace Bhavin\DeleteOrder\Helper;
 
 use Magento\Framework\App\Helper\Context;
 use Magento\Framework\AuthorizationInterface;
@@ -16,7 +16,7 @@ use Magento\Store\Model\Store;
  * @author Magento Core Team <core@magentocommerce.com>
  */
 class Data extends \Magento\Framework\App\Helper\AbstractHelper {
-	const ADMIN_RESOURCE = "Inficode_DeleteOrder::delete_order";
+	const ADMIN_RESOURCE = "Bhavin_DeleteOrder::delete_order";
 	const CONFIG_ENABLE = "enable";
 	const CONFIG_ALLOWED_STATUS = "allow_order_statuses";
 	/**
@@ -41,7 +41,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper {
 	 */
 	public function getConfig($path = null, $explode = false, $store = null) {
 		$configValue = $this->scopeConfig->getValue(
-			"inficode_delete_order/general/" . $path,
+			"bhavin_delete_order/general/" . $path,
 			\Magento\Store\Model\ScopeInterface::SCOPE_STORE,
 			$store
 		);

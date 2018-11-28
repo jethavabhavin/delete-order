@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © Inficode, Inc. All rights reserved.
+ * Copyright © Bhavin, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Inficode\DeleteOrder\Controller\Adminhtml\Order;
+namespace Bhavin\DeleteOrder\Controller\Adminhtml\Order;
 
-use Inficode\DeleteOrder\Helper\Data as Helper;
+use Bhavin\DeleteOrder\Helper\Data as Helper;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 use Magento\Sales\Api\OrderRepositoryInterface;
@@ -18,7 +18,7 @@ class MassDelete extends \Magento\Sales\Controller\Adminhtml\Order\AbstractMassA
 	 */
 	const ADMIN_RESOURCE = Helper::ADMIN_RESOURCE;
 	/**
-	 * @var \Inficode\DeleteOrder\Helper\Data
+	 * @var \Bhavin\DeleteOrder\Helper\Data
 	 */
 	protected $helper;
 	/**

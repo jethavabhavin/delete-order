@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © Inficode, Inc. All rights reserved.
+ * Copyright © Bhavin, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 -->
@@ -13,7 +13,7 @@
                     <resource id="Magento_Sales::sales_operation">
                         <resource id="Magento_Sales::sales_order">
                             <resource id="Magento_Sales::actions">
-                                <resource id="Inficode_DeleteOrder::delete_order" title="Delete Orders" translate="title" sortOrder="10" />
+                                <resource id="Bhavin_DeleteOrder::delete_order" title="Delete Orders" translate="title" sortOrder="10" />
                             </resource>
                         </resource>
                     </resource>
@@ -21,7 +21,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="Inficode_DeleteOrder::inficode_delete_order" title="Delete Order"/>
+                            <resource id="Bhavin_DeleteOrder::bhavin_delete_order" title="Delete Order"/>
                         </resource>
                     </resource>
                 </resource>

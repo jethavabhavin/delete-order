@@ -1,5 +1,5 @@
 {
-    "name": "inficode/module-delete-order",
+    "name": "bhavin/module-delete-order",
     "description": "Delete magento sales orders",
     "require": {
         "php": "~7.0.13|~7.1.0",
@@ -21,7 +21,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Inficode\\DeleteOrder\\": ""
+            "Bhavin\\DeleteOrder\\": ""
         }
     }
 }
