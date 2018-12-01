@@ -5,6 +5,7 @@
  */
 namespace Bhavin\DeleteOrder\Helper;
 
+use Magento\Backend\Model\UrlInterface;
 use Magento\Framework\App\Helper\Context;
 use Magento\Framework\AuthorizationInterface;
 use Magento\Sales\Model\Order;
@@ -16,21 +17,30 @@ use Magento\Store\Model\Store;
  * @author Magento Core Team <core@magentocommerce.com>
  */
 class Data extends \Magento\Framework\App\Helper\AbstractHelper {
-	const ADMIN_RESOURCE = "Bhavin_DeleteOrder::delete_order";
+	const ADMIN_RESOURCE = "Inficode_DeleteOrder::delete_order";
 	const CONFIG_ENABLE = "enable";
 	const CONFIG_ALLOWED_STATUS = "allow_order_statuses";
+	/**
+	 * @var \Magento\Framework\AuthorizationInterface
+	 */
+	protected $_authorization;
+	/**
+	 * @var \Magento\Backend\Model\UrlInterface
+	 */
+	protected $_backendUrl;
 	/**
 	 * @param Context $context
 	 * @param AuthorizationInterface $authorization
 	 */
 	public function __construct(
 		Context $context,
-		AuthorizationInterface $authorization
+		AuthorizationInterface $authorization,
+		UrlInterface $backendUrl
 	) {
 		parent::__construct($context);
 		$this->_authorization = $authorization;
+		$this->_backendUrl = $backendUrl;
 	}
-
 	/**
 	 * get allow to send new order confirmation email
 	 *
@@ -87,7 +97,6 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper {
 	public function isAllowedAction() {
 		return $this->_authorization->isAllowed(Self::ADMIN_RESOURCE);
 	}
-
 	/**
 	 * Order Delete URL getter
 	 * @param Order $order
@@ -95,6 +104,6 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper {
 	 * @return string
 	 */
 	public function getDeleteUrl(Order $order) {
-		return $this->_getUrl('sales/order/delete', ['id' => $order->getId()]);
+		return $this->_backendUrl->getUrl('sales/order/delete', ['order_id' => $order->getId()]);
 	}
 }
