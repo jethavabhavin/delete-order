@@ -1,15 +1,18 @@
 # Overview
 
-## Description
-Delete Order module helps shop owner to delete unwanted order from the system. The owner can delete form Order grid and view page in the admin, also add ACL for mange permission.
+## Short Description
+Delete Order module allow Administrators to delete their unwanted orders from the admin. The admin user just needs to enable the extension from the admin configuration and after that,  the admin will be able to delete their orders from sales orders.
 
+
+## Description
 Provide all details of your extension’s features and functionality. Include any updates.
 
-Delete Order module helps shop owner to delete unwanted order from the system. For now, Magento not allowed to the admin user to delete the order from the system. The owner can delete form Order grid and view page in the admin, also add ACL for mange permission. 
+Delete Order module allows Administrators to delete their unwanted orders from the admin. The admin user just needs to enable the extension from the admin configuration and after that, the admin will be able to delete their orders from sales grid and order view page, also add ACL to manage permission. 
 
-The Admin user just needs to login with Magento admin and if he has permission for deleting order then the admin able to delete order just clicking on delete button on order view page and also extra feature in module user have mass action for delete order in order grid. So not needed to go to order view page and click delete button to each order, he just select order which he not want in system and select delete action from mass action dropdown option and click on submit, after submit module delete order confirmation popup will appear then after confirming from user module will delete order and order related entity from system.
+Admin users need to log in with Magento Admin.  If the admin has permission to delete order then admin will able to delete the order by clicking on the delete button on order view page.  It also has a feature to delete mass orders in order grid. Hence, no need to delete individual orders, select unwanted orders and select delete action from mass action drop down option and click on submit. After submitting delete order confirmation popup will appear then after confirming from the user,  it will delete order and order related entity from the system.
 
-Delete Order responsible for delete order and order related other data from the system. so after deleting the order from the system not consume extra space in your database.
+By using Delete Order, the order will be deleted and with related data will also delete from the database hence it will not consume unwanted space in the system.
+
 
 ## Purpose of module
 
@@ -25,9 +28,9 @@ Bhavin\DeleteOrder module is required for Magento\Sales module to perform order 
 
 ## Key Features 
 * Easy to install with default Magento extension installation 
-* Easy to configure from the backend.
+* Easy to configure from the back-end.
 * Safe solution to delete Magento orders
-* Allow removing single, many or all orders simultaneously
+* Allow removing single, multiple or all orders simultaneously
 * Manage permission from Magento role
 * Enable/Disable extension feature 
 * Configuration to choose order status to allow delete operation.
@@ -35,9 +38,8 @@ Bhavin\DeleteOrder module is required for Magento\Sales module to perform order 
 * Compatible with Magento 2.2.x versions in Community Editions
  
 ## Future Enhancement 
-* Add delete order role back feature so the admin can easily get back all delete order data to the system.
-* Report for delete order so the admin finds who delete a record and on which date. 
-
+* Add delete order role back feature so the admin can easily get back all deleted order data to the system.
+* Report for delete order so the admin will able to find who delete a record and on which date. 
 
 # Deployment
 ## System requirements
