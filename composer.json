@@ -7,9 +7,7 @@
         "magento/framework": "101.0.*",
         "magento/module-ui": "101.0.*"
     },
-    "suggest": {
-        "magento/module-sales-sample-data": "Sample Data version:100.2.*"
-    },
+    "suggest": {},
     "type": "magento2-module",
     "version": "2.0.0",
     "license": [
